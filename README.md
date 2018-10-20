@@ -6,7 +6,7 @@ Visualización de datos temporales disponible en: https://beta.observablehq.com/
 Los datos de los pronósticos para los próximos 5 días se encuentran disponibles para su descarga en:
 http://www.pronosticosyalertas.gov.co/datos-abiertos-ideam
 
-El set de datos para la visualización consta de una semana de predicciones para los datos climatológicos en la ciudad de Bogotá. Dichos datos fueron captados en varios días generando el archivo fuente de información "Data.tsv" del presente repositorio ya que cambian permanentemente y muestran los pronósticos por horas de los siguientes 5 días únicamente.
+El set de datos para la visualización consta de 5 días (120 horas) de predicciones para los datos climatológicos en la ciudad de Bogotá. Dichos datos cambian cada hora por lo que se tiene un set no variable de datos "Data.csv" en el presente repositorio.
 
 ## What?
 Tabla con datos climatológicos y series de tiempo por días de la semana y por horas del día
@@ -33,6 +33,12 @@ Tabla con datos climatológicos y series de tiempo por días de la semana y por 
  - Canales: posición en x los números de los días de la semana para su uso en un <Arrange-Tables Express>, posición en y de la temperatura en ªC (ninguno de los datos llega temperaturas inferiores a los 10ªC) tambien con un Encode Arrange Tables Express
  - Encode => Express
  
- El segundo IDIOM radial line chart para describir la temperatura por horas de cada uno de los días de la semana (los datos preprocesados se encuentran en )
- 
+ El segundo IDIOM radial line chart para describir la temperatura por horas de cada uno de los días de la semana (los datos preprocesados se encuentran en "TempByDayHour.txt")
+- Marcas: Líneas (Para mostrar las tendencias en los cambios de la temperatura por días
+- Canales: posición radial de los valores de temperatura - Encode Radial Axis Orientation, Order Align para cada una de las horas del día para generar los segmentos en los que se divide el gráfico radial y respetar el caracter cíclico de los datos. 
+
+## Insights
+- La primera gráfica muestra como a medida que van pasando los días la temperatura promedio tiende a disminuir, a pesar de que el cambio en realidad es de menos de 1ºC 
+- En cuanto a la distribución por horas (pendiente de graficar) los datos son limitados tanto para el primer como para el segundo día, obteniendo datos de la tarde para el primer día y de la madrugada para el último día, lo que puede estar sesgando que la temperatura promedio en el último sea más baja
+- En el gráfico radial se espera observar como la temperatura tiene una tendencia a aumentar hacia el medio día y a disminuir en las noches, siendo similar en los diferentes días.
  
