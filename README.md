@@ -1,5 +1,7 @@
 # VA_tarea4
-Vizualization of temporal data, climate information for Bogota, predicted by IDEAM
+# Octubre está cada vez más frío
+
+Visualización de datos temporales disponible en: https://beta.observablehq.com/@as-garciav/temporal-data-climate-data-from-bogota
 
 Los datos de los pronósticos para los próximos 5 días se encuentran disponibles para su descarga en:
 http://www.pronosticosyalertas.gov.co/datos-abiertos-ideam
@@ -30,4 +32,7 @@ Tabla con datos climatológicos y series de tiempo por días de la semana y por 
  - Marcar: Líneas y Puntos --> El primero para detallar los cambios en la temperatura por días, el segundo para hacer énfasis en el dato de la temperatura para cada día.
  - Canales: posición en x los números de los días de la semana para su uso en un <Arrange-Tables Express>, posición en y de la temperatura en ªC (ninguno de los datos llega temperaturas inferiores a los 10ªC) tambien con un Encode Arrange Tables Express
  - Encode => Express
+ 
+ El segundo IDIOM radial line chart para describir la temperatura por horas de cada uno de los días de la semana (los datos preprocesados se encuentran en )
+ 
  
